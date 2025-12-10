@@ -1,0 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    width: 100%;
+    height: 400px;
+    background-color: pink;
+    border-bottom: solid 2px purple;
+}
+
+img{
+    width: 200px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+.imgcarta{
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    border-radius: 70%;
+}
+
+h1, p{
+    text-align: center;
+    font-style: italic;
+    color: purple;
+}
+
+.segundo{
+    padding-top: 5%;
+}
+
+.menu{
+    list-style: none;
+    background-color: lightgray;
+    max-width: 650px;
+    margin: auto;
+    padding: 10px;
+}
+
+.menu li{
+    display: inline-block;
+    position: relative;
+}
+
+.menu li a{
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.menu li a:hover{
+    background-color: pink;
+}
+
+.menu li ul{
+    display: none;
+    position: absolute;
+    background: mediumpurple;
+}
+
+.menu li:hover ul{
+    display: block;
+}
+
+.cart-box{
+    display: none;
+    position: fixed;
+    top: 20%;
+    right: 5%;
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+.productos {
+    padding: 30px;
+    text-align: center;
+    background: #fdf2f8;
+}
+
+.productos h2 {
+    font-size: 28px;
+    color: purple;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.producto {
+    display: inline-block;
+    width: 220px;
+    margin: 15px;
+    padding: 15px;
+    border: 2px solid purple;
+    background: white;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 0px 10px gray;
+}
+
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto h3 {
+    margin-top: 10px;
+    color: purple;
+}
+
+.precio {
+    font-size: 20px;
+    font-weight: bold;
+    color: #d400d4;
+}
+
+.producto button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background: purple;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.producto button:hover {
+    background: darkmagenta;
+}
