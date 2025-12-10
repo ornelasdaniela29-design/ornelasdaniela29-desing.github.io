@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sandra Art</title>
+    <link rel="stylesheet" href="Sa2.css">
+</head>
+
+<body>
+
+<header>
+  <h1>"SANDRA ART"</h1>
+    <p>PARA TODOS TUS EVENTOS</p>
+    <p class="segundo">OFRECEMOS :</p>
+
+    <nav class="menu">
+    
+            <li><a href="#">Contactos y sucursal</a>
+                <ul>
+                    <li><a href="https://www.google.com/intl/es-419/gmail/about/">Email</a></li>
+                    <li><a href="https://maps.google.com">Mapa</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Redes sociales</a>
+                <ul>
+                    <li><a href="https://facebook.com">Facebook</a></li>
+                    <li><a href="https://instagram.com">Instagram</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#" onclick="toggleCart()">🛒 Carrito (<span id="cartCount">0</span>)</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- CARRITO -->
+<div id="cartBox" class="cart-box">
+    <h2>Carrito de compras</h2>
+    <ul id="cartList"></ul>
+    <p><strong>Total:</strong> $<span id="totalCarrito">0</span></p>
+
+    <p><strong>Método de pago:</strong></p>
+    <select id="paymentMethod">
+        <option value="Tarjeta">Tarjeta de crédito/débito</option>
+        <option value="Efectivo">Efectivo</option>
+        <option value="Transferencia">Transferencia bancaria</option>
+    </select>
+
+    <br><br>
+    <button onclick="checkout()">Finalizar compra</button>
+</div>
+<section class="productos">
+    <h2>Nuestros productos</h2>
+
+    <div class="producto">
+        <img src="esferasN.jpg" alt="Esferas navideñas">
+        <h3>Esfera Navideña</h3>
+        <p class="precio">$25</p>
+        <button onclick="addToCart(Esfera Navideña, 25)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="vasoC.jpg" alt="vasos">
+        <h3>vasos color</h3>
+        <p class="precio">$35</p>
+        <button onclick="addToCart('vasos', 35)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="veladoras.jpg" alt="veladoras">
+        <h3>veladoras</h3>
+        <p class="precio">$50</p>
+        <button onclick="addToCart('veladoras', 50)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="vasoN.jpg" alt="vaso nav">
+        <h3>vaso navideño</h3>
+        <p class="precio">$50</p>
+        <button onclick="addToCart('vaso nav', 20)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="tazaN.jpg" alt="taza N">
+        <h3>Taza Navideña</h3>
+        <p class="precio">$10</p>
+        <button onclick="addToCart('taza N', 10)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+        <img src="regaloD.jpg" alt="Regalo D">
+        <h3>Regalo Dinero</h3>
+        <p class="precio">$25</p>
+        <button onclick="addToCart('Regalo D XC', 180)">Agregar al carrito</button>
+    </div>
+</section>
+
+<footer>
+    <center>
+        <h5>
+            Estamos ubicados en Teocaltiche Jal. Calle Gladiola #34, Colonia Maravillas.
+            <br>Teléfonos: 346-103-5967 / 346-109-8229.
+            <br>¡¡GRACIAS POR SU PREFERENCIA!!
+        </h5>
+    </center>
+</footer>
+
+<div id="cartBox" class="cart-box">
+    
+</div>
+
+<div id="ticket"></div>
+
+
+
+
+<script src="carrito.js"></script>
+
+
+</body>
+
+
+</html>

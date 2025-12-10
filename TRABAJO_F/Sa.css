@@ -1,0 +1,118 @@
+*{
+    margin-top: 0%;
+    margin-right: 0%;
+    margin-left:0%;   
+    margin-bottom: 0%
+}
+header{
+    width: auto;
+    height: 400px;
+    background-color:pink;
+    border-bottom: solid;
+}
+
+button{
+    float: right;
+    border-radius: 30px;
+    margin: 5px;
+}
+
+img{
+    width: 200px;
+    float: left;
+    margin-top: 2%;
+    margin-left: 5%;
+}
+
+h1{
+    padding-top: 5%;
+    padding-left: 20%;
+    font-style: italic;
+    color: purple;
+    font-size: 35px;
+}
+
+p{
+    padding-top: 2%;
+    padding-left: 32%;
+    font-style: italic;
+    color: purple;
+}
+
+.imgcarta{
+    width: 200px;
+    height: 150px;
+    float: right;
+    margin-top: 5%;
+    margin-right: 10%;
+    border-radius: 70%;
+}
+
+.segundo{
+    padding-top: 12%;
+    padding-left: 43%;
+    font-style: italic;
+}
+.menu {
+    list-style: none;
+    padding: 0%;
+    background-color:lightgray;
+    max-width: 650px;
+    margin: auto;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px;
+    display: block;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a:hover {
+    background-color: lightpink;
+}
+
+/*menu desplegable*/
+.menu li ul {
+    display:none;
+    position:absolute;
+    padding: 0%;
+    width: min-content;
+}
+
+.menu li:hover  ul {
+    display: flex;
+    flex-direction: column;
+    background-color: mediumpurple;
+    
+}
+.menu ul{
+    padding-left:20px ;
+}
+.boton {
+border: 1px solid blue; 
+padding: 10px; 
+background-color: blue; 
+color: red; 
+text-decoration: none; 
+text-transform: uppercase; 
+font-family: 'Colibri', sans-serif; 
+border-radius: 50px; 
+}
+footer{
+    margin-top: 100px;
+
+    }
+    a.button {
+    webkit-appearance: button;
+    moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
